@@ -1,0 +1,5 @@
+name,email,role,password,nis,nip,kelas_id
+Admin Contoh,admin@example.com,admin,admin123,,,
+Guru Contoh,guru@example.com,guru,guru123,,123456,
+Siswa Satu,siswa1@example.com,siswa,password123,2021001,,1
+Siswa Dua,siswa2@example.com,siswa,,2021002,,2

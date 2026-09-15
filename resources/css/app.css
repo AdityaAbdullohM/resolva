@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	/* Logo glow for dark mode */
+	.logo {
+		transition: transform 200ms ease, filter 200ms ease;
+	}
+
+	/* Logo hover micro-interaction */
+	.logo:hover {
+		transform: rotate(6deg) scale(1.06);
+	}
+
+	/* Subtle entrance for logo */
+	.logo {
+		animation: logo-entrance 600ms cubic-bezier(.2,.9,.2,1) both;
+	}
+
+	@keyframes logo-entrance {
+		0% { transform: translateY(-6px) scale(0.98); opacity: 0; }
+		60% { transform: translateY(2px) scale(1.02); opacity: 1; }
+		100% { transform: translateY(0) scale(1); opacity: 1; }
+	}
+
+	.dark .logo {
+		animation: resolva-glow 2.4s ease-in-out infinite;
+	}
+
+	@keyframes resolva-glow {
+		0%, 100% {
+			filter: drop-shadow(0 0 0 rgba(99,102,241,0));
+			transform: scale(1);
+		}
+		50% {
+			filter: drop-shadow(0 0 12px rgba(99,102,241,0.9));
+			transform: scale(1.03);
+		}
+	}
+
+	/* Sidebar entrance + hover effects */
+	.siswa-sidebar {
+		transform-origin: left center;
+		animation: sidebar-slide-in 500ms cubic-bezier(.2,.9,.2,1) both;
+	}
+
+	.siswa-sidebar nav ul li a {
+		transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+	}
+
+	.siswa-sidebar nav ul li a:hover {
+		transform: translateX(6px);
+		box-shadow: 0 6px 18px rgba(2,6,23,0.18);
+	}
+
+	@keyframes sidebar-slide-in {
+		0% { transform: translateX(-18px); opacity: 0; }
+		100% { transform: translateX(0); opacity: 1; }
+	}
+
+	/* PBL step button micro-interaction */
+	.pbl-step-anim {
+		transition: transform .28s cubic-bezier(.2,.9,.2,1), box-shadow .28s ease, opacity .28s ease;
+	}
+
+	/* Subtle card accent */
+	.pbl-card-accent {
+		box-shadow: 0 6px 18px rgba(2,6,23,0.06);
+		transition: transform .25s ease, box-shadow .25s ease;
+	}
+
+	.pbl-card-accent:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 18px 40px rgba(2,6,23,0.12);
+	}
+
+	/* Quiz page helpers */
+	.quiz-badge {
+		padding: .25rem .625rem;
+		border-radius: .5rem;
+		font-weight: 600;
+	}
+
+	.quiz-start-btn {
+		transition: transform .18s ease, box-shadow .18s ease, opacity .18s ease;
+	}
+
+	.quiz-start-btn:hover {
+		transform: translateY(-3px) scale(1.01);
+		box-shadow: 0 14px 30px rgba(2,6,23,0.12);
+	}
+
+	/* Hero header for class pages */
+	.hero-header {
+		background: linear-gradient(90deg, rgba(99,102,241,0.95) 0%, rgba(139,92,246,0.92) 45%, rgba(236,72,153,0.92) 100%);
+		color: #ffffff;
+		border-radius: .75rem;
+		box-shadow: 0 10px 30px rgba(2,6,23,0.12);
+	}
+
+	.hero-header .rounded-md i {
+		display: inline-block;
+		transform: translateZ(0);
+		transition: transform .28s cubic-bezier(.2,.9,.2,1);
+	}
+
+	.hero-header .rounded-md:hover i {
+		transform: translateY(-3px) scale(1.05);
+	}
+
+	/* Avatar ring for lists */
+	.avatar-ring {
+		box-shadow: 0 4px 14px rgba(2,6,23,0.08);
+		border: 3px solid rgba(255,255,255,0.12);
+	}
+
+	/* Reduced motion support */
+	@media (prefers-reduced-motion: reduce) {
+		.hero-header .rounded-md i, .quiz-start-btn, .pbl-card-accent, .siswa-sidebar { animation: none !important; transform: none !important; transition: none !important; }
+	}
+
+	/* Materi page helpers */
+	.materi-search-icon {
+		color: rgba(79,70,229,1); /* indigo-600 */
+	}
+
+	.materi-tile {
+		border-radius: .75rem;
+		transition: transform .22s ease, box-shadow .22s ease;
+	}
+
+	.materi-tile:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(2,6,23,0.12); }
+
+	.materi-action-btn { transition: all .18s ease; }
+
+	.materi-action-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(2,6,23,0.08); }
+
+	/* Selected pertemuan header & tiles */
+	.selected-pertemuan-header {
+		border-radius: .75rem;
+		padding: .75rem 1rem;
+	}
+
+	.selected-pertemuan-header h3 { margin: 0; }
+
+	.materi-tile .text-sm { color: rgba(31,41,55,0.8); }
+
+	/* Floating add style fallback */
+	.fab-add {
+		position: fixed;
+		right: 1.25rem;
+		bottom: 1.25rem;
+		background: linear-gradient(90deg,#10b981,#06b6d4);
+		color: #fff;
+		padding: .75rem 1rem;
+		border-radius: 9999px;
+		box-shadow: 0 12px 30px rgba(2,6,23,0.18);
+	}
+
+	/* Respect reduced motion preferences */
+	@media (prefers-reduced-motion: reduce) {
+		.dark .logo {
+			animation: none;
+		}
+
+		.logo {
+			animation: none;
+		}
+
+		.siswa-sidebar {
+			animation: none;
+		}
+	}
+}

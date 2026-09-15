@@ -1,0 +1,3 @@
+pertanyaan;tipe;opsi_a;opsi_b;opsi_c;opsi_d;opsi_e;jawaban_benar;gambar;opsi_a_gambar;opsi_b_gambar;opsi_c_gambar;opsi_d_gambar;opsi_e_gambar
+"Siapa penemu lampu pijar?";pilihan_ganda;"Thomas Edison";"Nikola Tesla";"Alexander Graham Bell";"James Watt";"Michael Faraday";0;soal1.jpg;a.jpg;b.jpg;c.jpg;d.jpg;e.jpg
+"Apa warna bendera Indonesia?";isian;;;;;;"Merah Putih";bendera.jpg;;;;;

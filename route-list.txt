@@ -1,0 +1,413 @@
+﻿
+  GET|HEAD        / .......................................................... 
+  GET|HEAD        _debug/phpzip .............................................. 
+  GET|HEAD        admin/courses admin.courses.index ΓÇ║ Admin\CourseController@ΓÇª
+  POST            admin/courses admin.courses.store ΓÇ║ Admin\CourseController@ΓÇª
+  GET|HEAD        admin/courses/create admin.courses.create ΓÇ║ Admin\CourseConΓÇª
+  GET|HEAD        admin/courses/{course} admin.courses.show ΓÇ║ Admin\CourseConΓÇª
+  PUT|PATCH       admin/courses/{course} admin.courses.update ΓÇ║ Admin\CourseCΓÇª
+  DELETE          admin/courses/{course} admin.courses.destroy ΓÇ║ Admin\CourseΓÇª
+  GET|HEAD        admin/courses/{course}/edit admin.courses.edit ΓÇ║ Admin\CourΓÇª
+  GET|HEAD        admin/dashboard admin.dashboard ΓÇ║ Admin\DashboardControllerΓÇª
+  GET|HEAD        admin/discussions admin.discussions.index ΓÇ║ Admin\DiscussioΓÇª
+  GET|HEAD        admin/discussions/{discussion} admin.discussions.show ΓÇ║ AdmΓÇª
+  GET|HEAD        admin/kelas admin.kelas.index ΓÇ║ Admin\AdminKelasController@ΓÇª
+  POST            admin/kelas admin.kelas.store ΓÇ║ Admin\AdminKelasController@ΓÇª
+  GET|HEAD        admin/kelas/create admin.kelas.create ΓÇ║ Admin\AdminKelasConΓÇª
+  GET|HEAD        admin/kelas/{kelas} admin.kelas.show ΓÇ║ Admin\AdminKelasContΓÇª
+  PUT|PATCH       admin/kelas/{kelas} admin.kelas.update ΓÇ║ Admin\AdminKelasCoΓÇª
+  DELETE          admin/kelas/{kelas} admin.kelas.destroy ΓÇ║ Admin\AdminKelasCΓÇª
+  GET|HEAD        admin/kelas/{kelas}/edit admin.kelas.edit ΓÇ║ Admin\AdminKelaΓÇª
+  POST            admin/kelas/{kelas}/mata-kuliah admin.kelas.mata-kuliah.addΓÇª
+  DELETE          admin/kelas/{kelas}/mata-kuliah/{mataPelajaran} admin.kelasΓÇª
+  POST            admin/kelas/{kelas}/mata-kuliah/{mataPelajaran}/assign-guru admin.kelas.assignGuru ΓÇ║ Admin\AdminKelasController@assignGurΓÇª
+  GET|HEAD        admin/kelas/{kelas}/students admin.kelas.students ΓÇ║ Admin\AΓÇª
+  POST            admin/kelas/{kelas}/students admin.kelas.storeStudent ΓÇ║ AdmΓÇª
+  DELETE          admin/kelas/{kelas}/students/{student} admin.kelas.removeStΓÇª
+  GET|HEAD        admin/mata-kuliah admin.mata-kuliah.index ΓÇ║ Admin\MataPelajΓÇª
+  POST            admin/mata-kuliah admin.mata-kuliah.store ΓÇ║ Admin\MataPelajΓÇª
+  GET|HEAD        admin/mata-kuliah/create admin.mata-kuliah.create ΓÇ║ Admin\MΓÇª
+  GET|HEAD        admin/mata-kuliah/{mata_kuliah} admin.mata-kuliah.show ΓÇ║ AdΓÇª
+  PUT|PATCH       admin/mata-kuliah/{mata_kuliah} admin.mata-kuliah.update ΓÇ║ ΓÇª
+  DELETE          admin/mata-kuliah/{mata_kuliah} admin.mata-kuliah.destroy  ΓÇª
+  GET|HEAD        admin/mata-kuliah/{mata_kuliah}/edit admin.mata-kuliah.editΓÇª
+  GET|HEAD        admin/materis admin.materis.index ΓÇ║ Admin\MateriController@ΓÇª
+  GET|HEAD        admin/problems admin.problems.index ΓÇ║ Admin\ProblemControllΓÇª
+  GET|HEAD        admin/quizzes admin.quizzes.index ΓÇ║ Admin\QuizController@inΓÇª
+  POST            admin/quizzes admin.quizzes.store ΓÇ║ Admin\QuizController@stΓÇª
+  GET|HEAD        admin/quizzes/create admin.quizzes.create ΓÇ║ Admin\QuizContrΓÇª
+  GET|HEAD        admin/quizzes/{quiz} admin.quizzes.show ΓÇ║ Admin\QuizControlΓÇª
+  PUT|PATCH       admin/quizzes/{quiz} admin.quizzes.update ΓÇ║ Admin\QuizContrΓÇª
+  DELETE          admin/quizzes/{quiz} admin.quizzes.destroy ΓÇ║ Admin\QuizContΓÇª
+  GET|HEAD        admin/quizzes/{quiz}/edit admin.quizzes.edit ΓÇ║ Admin\QuizCoΓÇª
+  GET|HEAD        admin/semester/{semester} admin.semester.show ΓÇ║ Admin\SemesΓÇª
+  PUT|PATCH       admin/semester/{semester} admin.semester.update ΓÇ║ Admin\SemΓÇª
+  DELETE          admin/semester/{semester} admin.semester.destroy ΓÇ║ Admin\SeΓÇª
+  GET|HEAD        admin/semester/{semester}/edit admin.semester.edit ΓÇ║ Admin\ΓÇª
+  GET|HEAD        admin/settings .............................. admin.settings
+  GET|HEAD        admin/submissions admin.submissions.index ΓÇ║ Admin\SubmissioΓÇª
+  GET|HEAD        admin/tahun-ajaran admin.tahun-ajaran.index ΓÇ║ Admin\TahunAjΓÇª
+  POST            admin/tahun-ajaran admin.tahun-ajaran.store ΓÇ║ Admin\TahunAjΓÇª
+  GET|HEAD        admin/tahun-ajaran/create admin.tahun-ajaran.create ΓÇ║ AdminΓÇª
+  GET|HEAD        admin/tahun-ajaran/{tahun_ajaran} admin.tahun-ajaran.show  ΓÇª
+  PUT|PATCH       admin/tahun-ajaran/{tahun_ajaran} admin.tahun-ajaran.updateΓÇª
+  DELETE          admin/tahun-ajaran/{tahun_ajaran} admin.tahun-ajaran.destroΓÇª
+  GET|HEAD        admin/tahun-ajaran/{tahun_ajaran}/edit admin.tahun-ajaran.eΓÇª
+  GET|HEAD        admin/tahun-ajaran/{tahun_ajaran}/semester admin.tahun-ajarΓÇª
+  POST            admin/tahun-ajaran/{tahun_ajaran}/semester admin.tahun-ajarΓÇª
+  GET|HEAD        admin/tahun-ajaran/{tahun_ajaran}/semester/create admin.tahΓÇª
+  GET|HEAD        admin/users admin.users.index ΓÇ║ Admin\AdminUserController@iΓÇª
+  POST            admin/users admin.users.store ΓÇ║ Admin\AdminUserController@sΓÇª
+  GET|HEAD        admin/users/create admin.users.create ΓÇ║ Admin\AdminUserContΓÇª
+  POST            admin/users/import admin.users.import ΓÇ║ Admin\AdminUserContΓÇª
+  GET|HEAD        admin/users/{user} admin.users.show ΓÇ║ Admin\AdminUserControΓÇª
+  PUT|PATCH       admin/users/{user} admin.users.update ΓÇ║ Admin\AdminUserContΓÇª
+  DELETE          admin/users/{user} admin.users.destroy ΓÇ║ Admin\AdminUserConΓÇª
+  GET|HEAD        admin/users/{user}/edit admin.users.edit ΓÇ║ Admin\AdminUserCΓÇª
+  GET|HEAD        confirm-password password.confirm ΓÇ║ Auth\ConfirmablePassworΓÇª
+  POST            confirm-password .. Auth\ConfirmablePasswordController@store
+  GET|HEAD        dashboard ......... dashboard ΓÇ║ DashboardController@redirect
+  GET|HEAD        dosen/dashboard dosen.dashboard ΓÇ║ Guru\DashboardController@ΓÇª
+  GET|HEAD        dosen/discussions dosen.discussions.index ΓÇ║ Guru\DiscussionΓÇª
+  GET|HEAD        dosen/discussions/create dosen.discussions.create.general  ΓÇª
+  POST            dosen/discussions/store dosen.discussions.store.general ΓÇ║ GΓÇª
+  GET|HEAD        dosen/discussions/{discussion} dosen.discussions.show ΓÇ║ GurΓÇª
+  PUT|PATCH       dosen/discussions/{discussion} dosen.discussions.update ΓÇ║ GΓÇª
+  DELETE          dosen/discussions/{discussion} dosen.discussions.destroy ΓÇ║ ΓÇª
+  GET|HEAD        dosen/discussions/{discussion}/edit dosen.discussions.edit ΓÇª
+  POST            dosen/discussions/{discussion}/posts dosen.discussions.postΓÇª
+  GET|HEAD        dosen/get-mata-kuliah-by-kelas/{kelas} dosen.get-mata-kuliaΓÇª
+  GET|HEAD        dosen/groups dosen.groups.index ΓÇ║ Guru\GroupController@index
+  POST            dosen/groups dosen.groups.store ΓÇ║ Guru\GroupController@store
+  GET|HEAD        dosen/groups/create dosen.groups.create ΓÇ║ Guru\GroupControlΓÇª
+  GET|HEAD        dosen/groups/{group} dosen.groups.show ΓÇ║ Guru\GroupControllΓÇª
+  PUT|PATCH       dosen/groups/{group} dosen.groups.update ΓÇ║ Guru\GroupControΓÇª
+  DELETE          dosen/groups/{group} dosen.groups.destroy ΓÇ║ Guru\GroupContrΓÇª
+  GET|HEAD        dosen/groups/{group}/edit dosen.groups.edit ΓÇ║ Guru\GroupConΓÇª
+  GET|HEAD        dosen/kelas ...... dosen.kelas.index ΓÇ║ KelasController@index
+  POST            dosen/kelas ...... dosen.kelas.store ΓÇ║ KelasController@store
+  GET|HEAD        dosen/kelas/create dosen.kelas.create ΓÇ║ KelasController@creΓÇª
+  GET|HEAD        dosen/kelas/{kelas} dosen.kelas.show ΓÇ║ KelasController@show
+  GET|HEAD        dosen/kelas/{kelas}/add-student dosen.kelas.add_student ΓÇ║ KΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/anggota dosen.kelas.anggota ΓÇ║ KelasContΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah dosen.kelas.mata-kuliah ΓÇ║ KΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/discussions dosen.kelas.mata-kuliah.discussions.index ΓÇ║ Guru\DiscussionController@indexByKelasAndMataPelajaraΓÇª
+  POST            dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/discussions dosen.kelas.mata-kuliah.discussions.store ΓÇ║ Guru\DiscussionController@storeByKelasAndMataPelajaraΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/discussions/create dosen.kelas.mata-kuliah.discussions.create ΓÇ║ Guru\DiscussionController@createByKelasAndMataPΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/materis dosΓÇª
+  POST            dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/materis dosΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/materis/create dosen.kelas.mata-kuliah.materis.create ΓÇ║ MateriController@createByKelasAndMataPelajΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/problem-based-learning dosen.kelas.mata-kuliah.problems.index ΓÇ║ ProblemController@indexByKelasAndMΓÇª
+  POST            dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/problem-based-learning dosen.kelas.mata-kuliah.problems.store ΓÇ║ ProblemController@storeByKelasAndMΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/problem-based-learning/create dosen.kelas.mata-kuliah.problems.create ΓÇ║ ProblemController@createByKeΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/mata-kuliah/{mataPelajaran}/submissions dosen.kelas.mata-kuliah.submissions.index ΓÇ║ ProblemController@indexSubmissionsByKelasAndMataPelajaraΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/materis dosen.kelas.materis.index ΓÇ║ MatΓÇª
+  POST            dosen/kelas/{kelas}/materis dosen.kelas.materis.store ΓÇ║ MatΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/materis/create dosen.kelas.materis.creaΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/materis/{materi} dosen.kelas.materis.shΓÇª
+  PUT             dosen/kelas/{kelas}/materis/{materi} dosen.kelas.materis.upΓÇª
+  DELETE          dosen/kelas/{kelas}/materis/{materi} dosen.kelas.materis.deΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/materis/{materi}/edit dosen.kelas.materΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/materis/{materi}/files/{materiFile}/download dosen.kelas.materis.download ΓÇ║ MateriController@doΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/materis/{materi}/files/{materiFile}/view dosen.kelas.materis.view ΓÇ║ MateriController@viewFiΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/problems dosen.kelas.problems.index ΓÇ║ PΓÇª
+  POST            dosen/kelas/{kelas}/problems dosen.kelas.problems.store ΓÇ║ PΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/problems/create dosen.kelas.problems.crΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/problems/{problem} dosen.kelas.problemsΓÇª
+  PUT|PATCH       dosen/kelas/{kelas}/problems/{problem} dosen.kelas.problemsΓÇª
+  DELETE          dosen/kelas/{kelas}/problems/{problem} dosen.kelas.problemsΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/problems/{problem}/edit dosen.kelas.proΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/problems/{problem}/submissions dosen.keΓÇª
+  GET|HEAD        dosen/kelas/{kelas}/problems/{problem}/submissions/{submission} dosen.kelas.problems.submissions.show ΓÇ║ ProblemController@showSubmiΓÇª
+  PATCH           dosen/kelas/{kelas}/problems/{problem}/submissions/{submission} dosen.kelas.problems.submissions.grade ΓÇ║ ProblemController@gradeSubmiΓÇª
+  DELETE          dosen/kelas/{kelas}/remove-student/{student} dosen.kelas.reΓÇª
+  POST            dosen/kelas/{kelas}/store-student dosen.kelas.store_studentΓÇª
+  PUT|PATCH       dosen/kelas/{kela} dosen.kelas.update ΓÇ║ KelasController@updΓÇª
+  DELETE          dosen/kelas/{kela} dosen.kelas.destroy ΓÇ║ KelasController@deΓÇª
+  GET|HEAD        dosen/kelas/{kela}/edit dosen.kelas.edit ΓÇ║ KelasController@ΓÇª
+  GET|HEAD        dosen/kuis .... dosen.kuis.index ΓÇ║ Guru\QuizController@index
+  POST            dosen/kuis .... dosen.kuis.store ΓÇ║ Guru\QuizController@store
+  PATCH           dosen/kuis/attempts/{attempt} dosen.kuis.attempts.update ΓÇ║ ΓÇª
+  GET|HEAD        dosen/kuis/attempts/{attempt} dosen.kuis.attempts.show ΓÇ║ GuΓÇª
+  PATCH           dosen/kuis/attempts/{attempt}/answers/{answer} dosen.kuis.aΓÇª
+  GET|HEAD        dosen/kuis/attempts/{attempt}/answers/{answer}/edit dosen.kΓÇª
+  GET|HEAD        dosen/kuis/attempts/{attempt}/edit dosen.kuis.attempts.editΓÇª
+  POST            dosen/kuis/attempts/{attempt}/grade-answers dosen.kuis.atteΓÇª
+  GET|HEAD        dosen/kuis/create dosen.kuis.create ΓÇ║ Guru\QuizController@cΓÇª
+  GET|HEAD        dosen/kuis/{kuis} dosen.kuis.show ΓÇ║ Guru\QuizController@show
+  PUT             dosen/kuis/{kuis} dosen.kuis.update ΓÇ║ Guru\QuizController@uΓÇª
+  DELETE          dosen/kuis/{kuis} dosen.kuis.destroy ΓÇ║ Guru\QuizController@ΓÇª
+  GET|HEAD        dosen/kuis/{kuis}/edit dosen.kuis.edit ΓÇ║ Guru\QuizControlleΓÇª
+  POST            dosen/kuis/{kuis}/questions dosen.kuis.questions.store ΓÇ║ GuΓÇª
+  GET|HEAD        dosen/kuis/{kuis}/questions/create dosen.kuis.questions.creΓÇª
+  GET|HEAD        dosen/kuis/{kuis}/questions/export dosen.kuis.questions.expΓÇª
+  POST            dosen/kuis/{kuis}/questions/import dosen.kuis.questions.impΓÇª
+  GET|HEAD        dosen/kuis/{kuis}/rekap dosen.kuis.rekap ΓÇ║ Guru\QuizControlΓÇª
+  GET|HEAD        dosen/kuis/{kuis}/rekap/export dosen.kuis.rekap.export ΓÇ║ GuΓÇª
+  POST            dosen/kuis/{kuis}/reset dosen.kuis.reset ΓÇ║ Guru\QuizControlΓÇª
+  POST            dosen/materis dosen.materis.store.general ΓÇ║ MateriControlleΓÇª
+  GET|HEAD        dosen/materis . dosen.materis.index ΓÇ║ MateriController@index
+  GET|HEAD        dosen/materis/create dosen.materis.create.general ΓÇ║ MateriCΓÇª
+  POST            dosen/materis/pertemuan dosen.materis.pertemuan.store ΓÇ║ MatΓÇª
+  DELETE          dosen/materis/pertemuan/{number} dosen.materis.pertemuan.deΓÇª
+  GET|HEAD        dosen/pbl-validations dosen.pbl.validations.index ΓÇ║ Guru\PbΓÇª
+  POST            dosen/pbl-validations/validate-all dosen.pbl.validations.vaΓÇª
+  POST            dosen/pbl-validations/{validation}/validate dosen.pbl.validΓÇª
+  GET|HEAD        dosen/penilaian dosen.penilaian.index ΓÇ║ Guru\PenilaianContrΓÇª
+  POST            dosen/problem-based-learning dosen.problems.store.general  ΓÇª
+  GET|HEAD        dosen/problem-based-learning dosen.problems.index ΓÇ║ ProblemΓÇª
+  GET|HEAD        dosen/problem-based-learning/create dosen.problems.create.gΓÇª
+  PATCH           dosen/problem-based-learning/{problem}/stages/{stage}/validate dosen.problems.stages.validate ΓÇ║ ProblemController@validateSΓÇª
+  PUT             dosen/problems/{problem} dosen.problems.update ΓÇ║ ProblemConΓÇª
+  DELETE          dosen/problems/{problem} dosen.problems.destroy ΓÇ║ ProblemCoΓÇª
+  GET|HEAD        dosen/problems/{problem} ............... dosen.problems.show
+  POST            dosen/problems/{problem}/discussions dosen.problems.discussΓÇª
+  GET|HEAD        dosen/problems/{problem}/discussions dosen.problems.discussΓÇª
+  GET|HEAD        dosen/problems/{problem}/discussions/create dosen.problems.ΓÇª
+  GET|HEAD        dosen/problems/{problem}/edit dosen.problems.edit ΓÇ║ ProblemΓÇª
+  POST            dosen/problems/{problem}/instructions dosen.problems.instruΓÇª
+  DELETE          dosen/problems/{problem}/instructions/{stage}/{index} dosenΓÇª
+  PATCH           dosen/problems/{problem}/instructions/{stage}/{index} dosenΓÇª
+  GET|HEAD        dosen/problems/{problem}/organisasi dosen.problems.organisaΓÇª
+  GET|HEAD        dosen/problems/{problem}/pbl-details dosen. ΓÇ║ ProblemControΓÇª
+  POST            dosen/problems/{problem}/pbl-validate dosen. ΓÇ║ ProblemContrΓÇª
+  POST            dosen/problems/{problem}/student-evaluation dosen. ΓÇ║ ProbleΓÇª
+  POST            dosen/problems/{problem}/student-feedback dosen. ΓÇ║ ProblemCΓÇª
+  POST            dosen/problems/{problem}/student-grade dosen. ΓÇ║ ProblemContΓÇª
+  PUT             dosen/questions/{question} dosen.questions.update ΓÇ║ Guru\QuΓÇª
+  DELETE          dosen/questions/{question} dosen.questions.destroy ΓÇ║ Guru\QΓÇª
+  GET|HEAD        dosen/questions/{question}/edit dosen.questions.edit ΓÇ║ GuruΓÇª
+  GET|HEAD        dosen/submissions dosen.submissions.index ΓÇ║ Guru\SubmissionΓÇª
+  POST            email/verification-notification verification.send ΓÇ║ Auth\EmΓÇª
+  GET|HEAD        forgot-password password.request ΓÇ║ Auth\PasswordResetLinkCoΓÇª
+  POST            forgot-password password.email ΓÇ║ Auth\PasswordResetLinkContΓÇª
+  GET|HEAD        guru/dashboard guru.dashboard ΓÇ║ Guru\DashboardController@daΓÇª
+  GET|HEAD        guru/discussions guru.discussions.index ΓÇ║ Guru\DiscussionCoΓÇª
+  GET|HEAD        guru/discussions/create guru.discussions.create.general ΓÇ║ GΓÇª
+  POST            guru/discussions/store guru.discussions.store.general ΓÇ║ GurΓÇª
+  GET|HEAD        guru/discussions/{discussion} guru.discussions.show ΓÇ║ Guru\ΓÇª
+  PUT|PATCH       guru/discussions/{discussion} guru.discussions.update ΓÇ║ GurΓÇª
+  DELETE          guru/discussions/{discussion} guru.discussions.destroy ΓÇ║ GuΓÇª
+  GET|HEAD        guru/discussions/{discussion}/edit guru.discussions.edit ΓÇ║ ΓÇª
+  POST            guru/discussions/{discussion}/posts guru.discussions.posts.ΓÇª
+  GET|HEAD        guru/get-mata-kuliah-by-kelas/{kelas} guru.get-mata-kuliah-ΓÇª
+  GET|HEAD        guru/groups . guru.groups.index ΓÇ║ Guru\GroupController@index
+  POST            guru/groups . guru.groups.store ΓÇ║ Guru\GroupController@store
+  GET|HEAD        guru/groups/create guru.groups.create ΓÇ║ Guru\GroupControlleΓÇª
+  GET|HEAD        guru/groups/{group} guru.groups.show ΓÇ║ Guru\GroupControllerΓÇª
+  PUT|PATCH       guru/groups/{group} guru.groups.update ΓÇ║ Guru\GroupControllΓÇª
+  DELETE          guru/groups/{group} guru.groups.destroy ΓÇ║ Guru\GroupControlΓÇª
+  GET|HEAD        guru/groups/{group}/edit guru.groups.edit ΓÇ║ Guru\GroupContrΓÇª
+  GET|HEAD        guru/kelas ........ guru.kelas.index ΓÇ║ KelasController@index
+  POST            guru/kelas ........ guru.kelas.store ΓÇ║ KelasController@store
+  GET|HEAD        guru/kelas/create guru.kelas.create ΓÇ║ KelasController@create
+  GET|HEAD        guru/kelas/{kelas} ......................... guru.kelas.show
+  GET|HEAD        guru/kelas/{kelas}/add-student guru.kelas.add_student ΓÇ║ KelΓÇª
+  GET|HEAD        guru/kelas/{kelas}/anggota guru.kelas.anggota ΓÇ║ KelasControΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah guru.kelas.mata-kuliah ΓÇ║ KelΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/discussions ΓÇª
+  POST            guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/discussions ΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/discussions/create guru.kelas.mata-kuliah.discussions.create ΓÇ║ Guru\DiscussionController@createByKelasAndMataPeΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/materis guruΓÇª
+  POST            guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/materis guruΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/materis/create guru.kelas.mata-kuliah.materis.create ΓÇ║ MateriController@createByKelasAndMataPelajaΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/problem-based-learning guru.kelas.mata-kuliah.problems.index ΓÇ║ ProblemController@indexByKelasAndMaΓÇª
+  POST            guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/problem-based-learning guru.kelas.mata-kuliah.problems.store ΓÇ║ ProblemController@storeByKelasAndMaΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/problem-based-learning/create guru.kelas.mata-kuliah.problems.create ΓÇ║ ProblemController@createByKelΓÇª
+  GET|HEAD        guru/kelas/{kelas}/mata-kuliah/{mataPelajaran}/submissions ΓÇª
+  GET|HEAD        guru/kelas/{kelas}/materis guru.kelas.materis.index ΓÇ║ MaterΓÇª
+  POST            guru/kelas/{kelas}/materis guru.kelas.materis.store ΓÇ║ MaterΓÇª
+  GET|HEAD        guru/kelas/{kelas}/materis/create guru.kelas.materis.createΓÇª
+  GET|HEAD        guru/kelas/{kelas}/materis/{materi} guru.kelas.materis.showΓÇª
+  PUT             guru/kelas/{kelas}/materis/{materi} guru.kelas.materis.updaΓÇª
+  DELETE          guru/kelas/{kelas}/materis/{materi} guru.kelas.materis.destΓÇª
+  GET|HEAD        guru/kelas/{kelas}/materis/{materi}/edit guru.kelas.materisΓÇª
+  GET|HEAD        guru/kelas/{kelas}/materis/{materi}/files/{materiFile}/download guru.kelas.materis.download ΓÇ║ MateriController@dowΓÇª
+  GET|HEAD        guru/kelas/{kelas}/materis/{materi}/files/{materiFile}/view guru.kelas.materis.view ΓÇ║ MateriController@viewFilΓÇª
+  GET|HEAD        guru/kelas/{kelas}/problems guru.kelas.problems.index ΓÇ║ ProΓÇª
+  POST            guru/kelas/{kelas}/problems guru.kelas.problems.store ΓÇ║ ProΓÇª
+  GET|HEAD        guru/kelas/{kelas}/problems/create guru.kelas.problems.creaΓÇª
+  GET|HEAD        guru/kelas/{kelas}/problems/{problem} guru.kelas.problems.sΓÇª
+  PUT|PATCH       guru/kelas/{kelas}/problems/{problem} guru.kelas.problems.uΓÇª
+  DELETE          guru/kelas/{kelas}/problems/{problem} guru.kelas.problems.dΓÇª
+  GET|HEAD        guru/kelas/{kelas}/problems/{problem}/edit guru.kelas.problΓÇª
+  GET|HEAD        guru/kelas/{kelas}/problems/{problem}/submissions guru.kelaΓÇª
+  GET|HEAD        guru/kelas/{kelas}/problems/{problem}/submissions/{submission} guru.kelas.problems.submissions.show ΓÇ║ ProblemController@showSubmisΓÇª
+  PATCH           guru/kelas/{kelas}/problems/{problem}/submissions/{submission} guru.kelas.problems.submissions.grade ΓÇ║ ProblemController@gradeSubmisΓÇª
+  DELETE          guru/kelas/{kelas}/remove-student/{student} guru.kelas.remoΓÇª
+  POST            guru/kelas/{kelas}/store-student guru.kelas.store_student  ΓÇª
+  PUT|PATCH       guru/kelas/{kela} guru.kelas.update ΓÇ║ KelasController@update
+  DELETE          guru/kelas/{kela} guru.kelas.destroy ΓÇ║ KelasController@destΓÇª
+  GET|HEAD        guru/kelas/{kela}/edit guru.kelas.edit ΓÇ║ KelasController@edΓÇª
+  GET|HEAD        guru/kuis .................................. guru.kuis.index
+  POST            guru/kuis .................................. guru.kuis.store
+  PATCH           guru/kuis/attempts/{attempt} ..... guru.kuis.attempts.update
+  GET|HEAD        guru/kuis/attempts/{attempt} ....... guru.kuis.attempts.show
+  PATCH           guru/kuis/attempts/{attempt}/answers/{answer} guru.kuis.attΓÇª
+  GET|HEAD        guru/kuis/attempts/{attempt}/answers/{answer}/edit guru.kuiΓÇª
+  GET|HEAD        guru/kuis/attempts/{attempt}/edit .. guru.kuis.attempts.edit
+  POST            guru/kuis/attempts/{attempt}/grade-answers guru.kuis.attempΓÇª
+  GET|HEAD        guru/kuis/create .......................... guru.kuis.create
+  GET|HEAD        guru/kuis/{kuis} ............................ guru.kuis.show
+  PUT             guru/kuis/{kuis} .......................... guru.kuis.update
+  DELETE          guru/kuis/{kuis} ......................... guru.kuis.destroy
+  GET|HEAD        guru/kuis/{kuis}/edit ....................... guru.kuis.edit
+  POST            guru/kuis/{kuis}/questions ....... guru.kuis.questions.store
+  GET|HEAD        guru/kuis/{kuis}/questions/create guru.kuis.questions.create
+  GET|HEAD        guru/kuis/{kuis}/questions/export guru.kuis.questions.export
+  GET|POST|HEAD   guru/kuis/{kuis}/questions/import guru.kuis.questions.import
+  GET|HEAD        guru/kuis/{kuis}/rekap ..................... guru.kuis.rekap
+  GET|HEAD        guru/kuis/{kuis}/rekap/export ....... guru.kuis.rekap.export
+  POST            guru/kuis/{kuis}/reset ..................... guru.kuis.reset
+  GET|HEAD        guru/materis ... guru.materis.index ΓÇ║ MateriController@index
+  POST            guru/materis guru.materis.store.general ΓÇ║ MateriController@ΓÇª
+  GET|HEAD        guru/materis/create guru.materis.create.general ΓÇ║ MateriConΓÇª
+  POST            guru/materis/pertemuan guru.materis.pertemuan.store ΓÇ║ MaterΓÇª
+  DELETE          guru/materis/pertemuan/{number} guru.materis.pertemuan.destΓÇª
+  GET|HEAD        guru/pbl-validations guru.pbl.validations.index ΓÇ║ Guru\PblVΓÇª
+  POST            guru/pbl-validations/validate-all guru.pbl.validations.valiΓÇª
+  POST            guru/pbl-validations/{validation}/validate guru.pbl.validatΓÇª
+  GET|HEAD        guru/penilaian guru.penilaian.index ΓÇ║ Guru\PenilaianControlΓÇª
+  GET|HEAD        guru/problem-based-learning guru.problems.index ΓÇ║ ProblemCoΓÇª
+  POST            guru/problem-based-learning guru.problems.store.general ΓÇ║ PΓÇª
+  GET|HEAD        guru/problem-based-learning/create guru.problems.create.genΓÇª
+  PATCH           guru/problem-based-learning/{problem}/stages/{stage}/validate guru.problems.stages.validate ΓÇ║ ProblemController@validateStΓÇª
+  PUT             guru/problems/{problem} guru.problems.update ΓÇ║ ProblemContrΓÇª
+  DELETE          guru/problems/{problem} guru.problems.destroy ΓÇ║ ProblemContΓÇª
+  GET|HEAD        guru/problems/{problem} ................. guru.problems.show
+  POST            guru/problems/{problem}/discussions guru.problems.discussioΓÇª
+  GET|HEAD        guru/problems/{problem}/discussions guru.problems.discussioΓÇª
+  GET|HEAD        guru/problems/{problem}/discussions/create guru.problems.diΓÇª
+  GET|HEAD        guru/problems/{problem}/edit guru.problems.edit ΓÇ║ ProblemCoΓÇª
+  POST            guru/problems/{problem}/instructions guru.problems.instructΓÇª
+  DELETE          guru/problems/{problem}/instructions/{stage}/{index} guru.pΓÇª
+  PATCH           guru/problems/{problem}/instructions/{stage}/{index} guru.pΓÇª
+  GET|HEAD        guru/problems/{problem}/organisasi guru.problems.organisasiΓÇª
+  GET|HEAD        guru/problems/{problem}/pbl-details guru. ΓÇ║ ProblemControllΓÇª
+  POST            guru/problems/{problem}/pbl-validate guru. ΓÇ║ ProblemControlΓÇª
+  POST            guru/problems/{problem}/student-evaluation guru. ΓÇ║ ProblemCΓÇª
+  POST            guru/problems/{problem}/student-feedback guru. ΓÇ║ ProblemConΓÇª
+  POST            guru/problems/{problem}/student-grade guru. ΓÇ║ ProblemControΓÇª
+  PUT             guru/questions/{question} ............ guru.questions.update
+  DELETE          guru/questions/{question} ........... guru.questions.destroy
+  GET|HEAD        guru/questions/{question}/edit ......... guru.questions.edit
+  GET|HEAD        guru/submissions guru.submissions.index ΓÇ║ Guru\SubmissionCoΓÇª
+  GET|HEAD        guru/{path?} ............................................... 
+  GET|HEAD        kelas/{kelas}/materis/{materi} kelas.materis.show ΓÇ║ MateriCΓÇª
+  GET|HEAD        live-code-demo .............................. live-code-demo
+  GET|HEAD        login ... login ΓÇ║ Auth\AuthenticatedSessionController@create
+  POST            login ............ Auth\AuthenticatedSessionController@store
+  POST            logout logout ΓÇ║ Auth\AuthenticatedSessionController@destroy
+  GET|HEAD        mahasiswa/compiler mahasiswa.compiler.index ΓÇ║ SiswaProblemCΓÇª
+  POST            mahasiswa/compiler/run mahasiswa.compiler.run ΓÇ║ SiswaProbleΓÇª
+  GET|HEAD        mahasiswa/dashboard mahasiswa.dashboard ΓÇ║ Siswa\DashboardCoΓÇª
+  GET|HEAD        mahasiswa/discussions mahasiswa.discussions.index ΓÇ║ Siswa\DΓÇª
+  POST            mahasiswa/discussions mahasiswa.discussions.store ΓÇ║ Siswa\DΓÇª
+  GET|HEAD        mahasiswa/discussions/{discussion} mahasiswa.discussions.shΓÇª
+  POST            mahasiswa/discussions/{discussion}/posts mahasiswa.discussiΓÇª
+  GET|HEAD        mahasiswa/enroll mahasiswa.enroll.create ΓÇ║ SiswaProblemContΓÇª
+  POST            mahasiswa/enroll mahasiswa.enroll.store ΓÇ║ SiswaProblemContrΓÇª
+  GET|HEAD        mahasiswa/kelas mahasiswa.kelas.index ΓÇ║ Siswa\SiswaKelasConΓÇª
+  GET|HEAD        mahasiswa/kelas/{kelas}/materi/{materi} mahasiswa.materi.shΓÇª
+  GET|HEAD        mahasiswa/kelas/{kelas}/materi/{materi}/files/{materiFile}/download mahasiswa.materi.downloadFile ΓÇ║ Siswa\MateriController@dowΓÇª
+  GET|HEAD        mahasiswa/kelas/{kelas}/materi/{materi}/files/{materiFile}/view mahasiswa.materi.viewFile ΓÇ║ Siswa\MateriController@vieΓÇª
+  GET|HEAD        mahasiswa/kelas/{kelas}/problem/{problem} mahasiswa.problemΓÇª
+  GET|HEAD        mahasiswa/kelompok mahasiswa.kelompok.index ΓÇ║ Siswa\SiswaKeΓÇª
+  GET|HEAD        mahasiswa/kelompok/{kelompok} mahasiswa.kelompok.show ΓÇ║ SisΓÇª
+  POST            mahasiswa/kelompok/{kelompok}/join mahasiswa.kelompok.join ΓÇª
+  GET|HEAD        mahasiswa/mata-kuliah mahasiswa.mata-kuliah.index ΓÇ║ Siswa\SΓÇª
+  GET|HEAD        mahasiswa/mata-kuliah/{mataPelajaran} mahasiswa.mata-kuliahΓÇª
+  GET|HEAD        mahasiswa/materis mahasiswa.materis.index ΓÇ║ Siswa\MateriConΓÇª
+  GET|HEAD        mahasiswa/pengumumans mahasiswa.pengumumans.index ΓÇ║ Siswa\PΓÇª
+  GET|HEAD        mahasiswa/pengumumans/{pengumuman} mahasiswa.pengumumans.shΓÇª
+  GET|HEAD        mahasiswa/penilaian mahasiswa.penilaian.index ΓÇ║ Siswa\SiswaΓÇª
+  GET|HEAD        mahasiswa/problem-based-learning mahasiswa.problems.index  ΓÇª
+  GET|HEAD        mahasiswa/problem-based-learning/{problem} mahasiswa.probleΓÇª
+  GET|HEAD        mahasiswa/problem-based-learning/{problem}/discussions mahaΓÇª
+  POST            mahasiswa/problem-based-learning/{problem}/discussions mahaΓÇª
+  GET|HEAD        mahasiswa/problem-based-learning/{problem}/discussions/create mahasiswa.problems.discussions.create ΓÇ║ Siswa\DiscussionController@creΓÇª
+  POST            mahasiswa/problem-based-learning/{problem}/feedback mahasisΓÇª
+  POST            mahasiswa/problem-based-learning/{problem}/rubric mahasiswaΓÇª
+  POST            mahasiswa/problem-based-learning/{problem}/stages/{stage}/complete mahasiswa.problems.stages.complete ΓÇ║ SiswaProblemController@complΓÇª
+  GET|HEAD        mahasiswa/problem-based-learning/{problem}/submit mahasiswaΓÇª
+  POST            mahasiswa/problem-based-learning/{problem}/submit mahasiswaΓÇª
+  PATCH           mahasiswa/problem-based-learning/{problem}/submit mahasiswaΓÇª
+  GET|HEAD        mahasiswa/problem-based-learning/{problem}/submit/edit mahaΓÇª
+  POST            mahasiswa/problems/{problem}/pbl/request-validation mahasisΓÇª
+  GET|HEAD        mahasiswa/problems/{problem}/pbl/status mahasiswa.problems.ΓÇª
+  GET|HEAD        mahasiswa/quizzes mahasiswa.quizzes.index ΓÇ║ Siswa\QuizContrΓÇª
+  GET|HEAD        mahasiswa/quizzes/{quiz} mahasiswa.quizzes.show ΓÇ║ Siswa\QuiΓÇª
+  POST            mahasiswa/quizzes/{quiz}/submit mahasiswa.quizzes.submit ΓÇ║ ΓÇª
+  GET|HEAD        mahasiswa/refleksi mahasiswa.refleksi.index ΓÇ║ Siswa\RefleksΓÇª
+  POST            mahasiswa/refleksi mahasiswa.refleksi.store ΓÇ║ Siswa\RefleksΓÇª
+  GET|HEAD        mahasiswa/refleksi/create mahasiswa.refleksi.create ΓÇ║ SiswaΓÇª
+  GET|HEAD        mahasiswa/refleksi/{refleksi} mahasiswa.refleksi.show ΓÇ║ SisΓÇª
+  PUT|PATCH       mahasiswa/refleksi/{refleksi} mahasiswa.refleksi.update ΓÇ║ SΓÇª
+  DELETE          mahasiswa/refleksi/{refleksi} mahasiswa.refleksi.destroy ΓÇ║ ΓÇª
+  GET|HEAD        mahasiswa/refleksi/{refleksi}/edit mahasiswa.refleksi.edit ΓÇª
+  GET|HEAD        mahasiswa/submissions mahasiswa.submissions.index ΓÇ║ SiswaPrΓÇª
+  PUT             password .. password.update ΓÇ║ Auth\PasswordController@update
+  GET|HEAD        profile .............. profile.edit ΓÇ║ ProfileController@edit
+  PATCH           profile .......... profile.update ΓÇ║ ProfileController@update
+  DELETE          profile ........ profile.destroy ΓÇ║ ProfileController@destroy
+  GET|HEAD        register ... register ΓÇ║ Auth\RegisteredUserController@create
+  POST            register ............... Auth\RegisteredUserController@store
+  POST            reset-password password.store ΓÇ║ Auth\NewPasswordController@ΓÇª
+  GET|HEAD        reset-password/{token} password.reset ΓÇ║ Auth\NewPasswordConΓÇª
+  GET|HEAD        siswa/compiler siswa.compiler.index ΓÇ║ SiswaProblemControlleΓÇª
+  POST            siswa/compiler/run siswa.compiler.run ΓÇ║ SiswaProblemControlΓÇª
+  GET|HEAD        siswa/dashboard siswa.dashboard ΓÇ║ Siswa\DashboardControllerΓÇª
+  GET|HEAD        siswa/discussions siswa.discussions.index ΓÇ║ Siswa\DiscussioΓÇª
+  POST            siswa/discussions siswa.discussions.store ΓÇ║ Siswa\DiscussioΓÇª
+  GET|HEAD        siswa/discussions/{discussion} siswa.discussions.show ΓÇ║ SisΓÇª
+  POST            siswa/discussions/{discussion}/posts siswa.discussions.postΓÇª
+  GET|HEAD        siswa/enroll siswa.enroll.create ΓÇ║ SiswaProblemController@cΓÇª
+  POST            siswa/enroll siswa.enroll.store ΓÇ║ SiswaProblemController@stΓÇª
+  GET|HEAD        siswa/kelas siswa.kelas.index ΓÇ║ Siswa\SiswaKelasController@ΓÇª
+  GET|HEAD        siswa/kelas/{kelas}/materi/{materi} siswa.materi.show ΓÇ║ SisΓÇª
+  GET|HEAD        siswa/kelas/{kelas}/materi/{materi}/files/{materiFile}/download siswa.materi.downloadFile ΓÇ║ Siswa\MateriController@downloaΓÇª
+  GET|HEAD        siswa/kelas/{kelas}/materi/{materi}/files/{materiFile}/view siswa.materi.viewFile ΓÇ║ Siswa\MateriController@viewFilΓÇª
+  GET|HEAD        siswa/kelas/{kelas}/problem/{problem} siswa.problem.show ΓÇ║ ΓÇª
+  GET|HEAD        siswa/kelompok siswa.kelompok.index ΓÇ║ Siswa\SiswaKelompokCoΓÇª
+  GET|HEAD        siswa/kelompok/{kelompok} siswa.kelompok.show ΓÇ║ Siswa\SiswaΓÇª
+  POST            siswa/kelompok/{kelompok}/join siswa.kelompok.join ΓÇ║ Siswa\ΓÇª
+  GET|HEAD        siswa/mata-kuliah siswa.mata-kuliah.index ΓÇ║ Siswa\SiswaMataΓÇª
+  GET|HEAD        siswa/mata-kuliah/{mataPelajaran} siswa.mata-kuliah.show ΓÇ║ ΓÇª
+  GET|HEAD        siswa/materis siswa.materis.index ΓÇ║ Siswa\MateriController@ΓÇª
+  GET|HEAD        siswa/pengumumans siswa.pengumumans.index ΓÇ║ Siswa\PengumumaΓÇª
+  GET|HEAD        siswa/pengumumans/{pengumuman} siswa.pengumumans.show ΓÇ║ SisΓÇª
+  GET|HEAD        siswa/penilaian siswa.penilaian.index ΓÇ║ Siswa\SiswaPenilaiaΓÇª
+  GET|HEAD        siswa/problem-based-learning siswa.problems.index ΓÇ║ SiswaPrΓÇª
+  GET|HEAD        siswa/problem-based-learning/{problem} siswa.problems.show ΓÇª
+  GET|HEAD        siswa/problem-based-learning/{problem}/discussions siswa.prΓÇª
+  POST            siswa/problem-based-learning/{problem}/discussions siswa.prΓÇª
+  GET|HEAD        siswa/problem-based-learning/{problem}/discussions/create sΓÇª
+  POST            siswa/problem-based-learning/{problem}/feedback siswa.problΓÇª
+  POST            siswa/problem-based-learning/{problem}/rubric siswa.problemΓÇª
+  POST            siswa/problem-based-learning/{problem}/stages/{stage}/complete siswa.problems.stages.complete ΓÇ║ SiswaProblemController@completeSΓÇª
+  GET|HEAD        siswa/problem-based-learning/{problem}/submit siswa.problemΓÇª
+  POST            siswa/problem-based-learning/{problem}/submit siswa.problemΓÇª
+  PATCH           siswa/problem-based-learning/{problem}/submit siswa.problemΓÇª
+  GET|HEAD        siswa/problem-based-learning/{problem}/submit/edit siswa.prΓÇª
+  POST            siswa/problems/{problem}/pbl/request-validation siswa.problΓÇª
+  GET|HEAD        siswa/problems/{problem}/pbl/status siswa.problems.pbl.statΓÇª
+  GET|HEAD        siswa/quizzes siswa.quizzes.index ΓÇ║ Siswa\QuizController@inΓÇª
+  GET|HEAD        siswa/quizzes/{quiz} siswa.quizzes.show ΓÇ║ Siswa\QuizControlΓÇª
+  POST            siswa/quizzes/{quiz}/submit siswa.quizzes.submit ΓÇ║ Siswa\QuΓÇª
+  GET|HEAD        siswa/refleksi siswa.refleksi.index ΓÇ║ Siswa\RefleksiControlΓÇª
+  POST            siswa/refleksi siswa.refleksi.store ΓÇ║ Siswa\RefleksiControlΓÇª
+  GET|HEAD        siswa/refleksi/create siswa.refleksi.create ΓÇ║ Siswa\RefleksΓÇª
+  GET|HEAD        siswa/refleksi/{refleksi} siswa.refleksi.show ΓÇ║ Siswa\RefleΓÇª
+  PUT|PATCH       siswa/refleksi/{refleksi} siswa.refleksi.update ΓÇ║ Siswa\RefΓÇª
+  DELETE          siswa/refleksi/{refleksi} siswa.refleksi.destroy ΓÇ║ Siswa\ReΓÇª
+  GET|HEAD        siswa/refleksi/{refleksi}/edit siswa.refleksi.edit ΓÇ║ Siswa\ΓÇª
+  GET|HEAD        siswa/submissions siswa.submissions.index ΓÇ║ SiswaProblemConΓÇª
+  GET|HEAD        siswa/{path?} .............................................. 
+  GET|HEAD        storage/{path} ............................... storage.local
+  GET|HEAD        submissions/{submission}/file submissions.file ΓÇ║ SiswaProblΓÇª
+  GET|HEAD        up ......................................................... 
+  GET|HEAD        verify-email verification.notice ΓÇ║ Auth\EmailVerificationPrΓÇª
+  GET|HEAD        verify-email/{id}/{hash} verification.verify ΓÇ║ Auth\VerifyEΓÇª
+
+                                                          Showing [409] routes
+

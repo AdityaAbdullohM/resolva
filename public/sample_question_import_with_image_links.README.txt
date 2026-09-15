@@ -1,0 +1,23 @@
+Panduan singkat — import soal bergambar menggunakan URL gambar
+
+1) Struktur file
+   - File CSV contoh: sample_question_import_with_image_links.csv
+   - Kolom penting sama seperti format CSV biasa:
+     - question_image: diisi dengan URL lengkap ke file gambar (mis. https://example.com/images/q1.png)
+     - option_{a,b,c,d}_image: URL lengkap untuk gambar opsi (boleh kosong)
+
+2) Keuntungan menggunakan URL
+   - Tidak perlu meng-upload gambar ke server Anda terlebih dahulu.
+   - Memudahkan pengujian cepat dengan gambar yang dihosting eksternal.
+
+3) Hal yang perlu diperhatikan
+   - Pastikan URL dapat diakses publik (tidak memerlukan autentikasi) dan server mengizinkan hotlinking.
+   - Untuk keamanan/performa, sistem import bisa mendownload gambar dari URL dan menyimpannya ke storage lokal.
+   - Periksa kebijakan CORS jika aplikasi memakai browser untuk mem-fetch gambar saat preview.
+   - Jika gambar dihapus dari sumber eksternal, soal akan kehilangan gambar.
+
+4) Contoh
+   - Baris contoh pada CSV menggunakan URL placeholder `https://example.com/images/...`.
+   - Ganti dengan URL gambar nyata saat Anda mencoba import.
+
+Butuh saya buat contoh gambar yang dihosting lokal (copy ke public/sample_import_images/) atau ZIP dengan beberapa gambar contoh?

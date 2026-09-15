@@ -1,0 +1,57 @@
+<html xmlns:x="urn:schemas-microsoft-com:office:excel">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<table border="1">
+    <tr>
+        <th>pertanyaan</th>
+        <th>tipe</th>
+        <th>opsi_a</th>
+        <th>opsi_b</th>
+        <th>opsi_c</th>
+        <th>opsi_d</th>
+        <th>opsi_e</th>
+        <th>jawaban_benar</th>
+        <th>gambar</th>
+        <th>opsi_a_gambar</th>
+        <th>opsi_b_gambar</th>
+        <th>opsi_c_gambar</th>
+        <th>opsi_d_gambar</th>
+        <th>opsi_e_gambar</th>
+    </tr>
+    <tr>
+        <td>Siapa penemu lampu pijar?</td>
+        <td>pilihan_ganda</td>
+        <td>Thomas Edison</td>
+        <td>Nikola Tesla</td>
+        <td>Alexander Graham Bell</td>
+        <td>James Watt</td>
+        <td>Michael Faraday</td>
+        <td>0</td>
+        <td>soal1.jpg</td>
+        <td>a.jpg</td>
+        <td>b.jpg</td>
+        <td>c.jpg</td>
+        <td>d.jpg</td>
+        <td>e.jpg</td>
+    </tr>
+    <tr>
+        <td>Apa warna bendera Indonesia?</td>
+        <td>isian</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Merah Putih</td>
+        <td>bendera.jpg</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+</body>
+</html>
