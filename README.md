@@ -12,7 +12,7 @@
 </div>
 
 <p align="center">
-  <img src="docs/assets/resolva-logo.svg" alt="Resolva logo" width="120" />
+  <img src="public/images/logo-resolva.png" alt="Resolva logo" width="120" />
   <br>
   <strong>Learning Management System modern berbasis Laravel</strong><br>
   Menghubungkan admin, guru, dan siswa dalam satu ekosistem pembelajaran digital yang terstruktur.
