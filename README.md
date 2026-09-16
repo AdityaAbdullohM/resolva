@@ -1,10 +1,6 @@
 ﻿# Resolva LMS
 
 <div align="center">
-  <img src="docs/assets/resolva-banner.svg" alt="Resolva LMS banner" width="1200" />
-</div>
-
-<div align="center">
   <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel" alt="Laravel 12" />
   <img src="https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php" alt="PHP 8.2" />
   <img src="https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql" alt="MySQL" />
@@ -17,6 +13,8 @@
   <strong>Learning Management System modern berbasis Laravel</strong><br>
   Menghubungkan admin, guru, dan siswa dalam satu ekosistem pembelajaran digital yang terstruktur.
 </p>
+
+> **Filosofi logo Resolva**: logo ini merepresentasikan semangat untuk menemukan solusi melalui pembelajaran yang terhubung, terarah, dan kolaboratif. Identitas visualnya menjadi simbol perjalanan admin, guru, dan siswa dalam mengubah tantangan pembelajaran menjadi kemajuan bersama.
 
 ## Overview
 
